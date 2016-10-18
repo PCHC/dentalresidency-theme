@@ -1,0 +1,17 @@
+{
+  "name": "pchc-dr2016",
+  "version": "1.0.0",
+  "authors": [
+    "Chris Violette <cvioletterun@gmail.com>"
+  ],
+  "description": "Gantry Child Theme for PCHC Dental Residency",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

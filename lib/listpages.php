@@ -37,7 +37,7 @@ function shortcode__list_child_pages( $atts ) {
 
   global $post;
 
-  if( is_page() && $post->post_parent ){
+  if( !is_page() ){
     //
   } else {
     $context = query_pages( $a );

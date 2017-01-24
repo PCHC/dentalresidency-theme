@@ -2,9 +2,9 @@
 {% set scope = 'page' %}
 
   {# Begin Post Entries #}
-  <section class="entries">
+  <section class="subentries">
       {% for post in childpages %}
-          {% include ['partials/content-' ~ scope ~ '.html.twig', (post.format) ? 'partials/content-' ~ post.format ~ '.html.twig' : '', 'partials/content.html.twig'] %}
+          {% include ['partials/content-subpage.html.twig'] %}
       {% endfor %}
   </section>
   {# End Post Entries #}

@@ -1,0 +1,43 @@
+name: Random Image Background
+description: Generates a random image
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    images:
+      type: collection.list
+      array: true
+      label: Images
+      description: Create each image to display.
+      value: name
+      ajax: true
+
+      fields:
+        .name:
+          type: input.text
+          label: Name
+          skip: true
+        .image:
+          type: input.imagepicker
+          label: Image
+          description: Select desired image.
+
+    class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.
+
+    imageOverlay:
+      type: select.select
+      label: Image Overlay
+      description: Enable or disable the image overlay.
+      default: enable
+      options:
+        enable: Enable
+        disable: Disable

@@ -4,6 +4,7 @@
 /custom/css-compiled
 custom/blog*/*
 !custom/blog*/scss/
+!custom/blog*/particles/
 
 # NPM Files
 node_modules/

@@ -101,7 +101,7 @@ p a {
 }
 
 img {
-  .size-medium, .size-thumbnail {
+  &.size-medium, &.size-thumbnail {
     @include breakpoint(mobile-only) {
       max-width: 33%;
     }

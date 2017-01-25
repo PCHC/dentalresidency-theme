@@ -1,0 +1,10 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+<div class="{{ particle.class|e }}">
+  {% set randomimage = random(particle.images) %}
+  <div id="pchc-random-image-{{ id }}" class="pchc-random-image {% if particle.imageOverlay == 'enable' %}has-color-overlay{% endif %}" style="background-image: url('{{ url(randomimage.image) }}');"></div>
+</div>
+
+{% endblock %}

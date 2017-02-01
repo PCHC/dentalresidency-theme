@@ -59,6 +59,13 @@
                   </section>
                 {% endif %}
 
+                {% if post.get_field('email') is not empty %}
+                  <section class="resident-details resident-details--email">
+                    <h4>Email</h4>
+                    <a href="mailto:{{ post.get_field('email') }}">{{ post.get_field('email') }}</a>
+                  </section>
+                {% endif %}
+
                 {# Begin Page Content #}
                 {{ post.paged_content }}
 
